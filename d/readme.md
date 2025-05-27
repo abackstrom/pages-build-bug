@@ -1,1 +1,1 @@
-d/readme.me becomes d/index.html
+d/readme.md becomes d/index.html
