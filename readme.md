@@ -2,6 +2,8 @@
 
 Sample site showing that [benbalter/jekyll-readme-index](https://github.com/benbalter/jekyll-readme-index) `with_frontmatter` unexpectedly moves a nested readme into its parent directory.
 
+https://github.com/abackstrom/pages-build-bug/
+
 <table>
 <thead>
 <tr>
