@@ -43,6 +43,13 @@ Sample site showing that [benbalter/jekyll-readme-index](https://github.com/benb
 <td nowrap><a href="f/g/index.html">f/g/index.html</a><br><a href="f/h/index.html">f/h/index.html</a></td>
 <td nowrap><a href="f/index.html">f/index.html</a><br><a href="f/h/index.html">f/h/index.html</a></td>
 </tr>
+<tr>
+<td>Broken</td>
+<td>deeply nested readme.md moves up one level</td>
+<td nowrap>i/j/k/readme.md</td>
+<td nowrap><a href="i/j/k/index.html">i/j/k/index.html</a></td>
+<td nowrap><a href="i/j/index.html">i/j/index.html</a></td>
+</tr>
 </tbody>
 </table>
 
