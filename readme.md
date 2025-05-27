@@ -35,11 +35,11 @@ Sample site showing that [benbalter/jekyll-readme-index](https://github.com/benb
 <td nowrap><a href="d/index.html">d/index.html</a><br><a href="d/e/index.html">d/e/index.html</a></td>
 </tr>
 <tr>
-<td>Working</td>
-<td>two subdirs will not fight over parent dir</td>
+<td>Broken</td>
+<td>one subdir readme moves into parent</td>
 <td nowrap>f/g/readme.md<br>f/h/readme.md</td>
 <td nowrap><a href="f/g/index.html">f/g/index.html</a><br><a href="f/h/index.html">f/h/index.html</a></td>
-<td nowrap><a href="f/g/index.html">f/g/index.html</a><br><a href="f/h/index.html">f/h/index.html</a></td>
+<td nowrap><a href="f/index.html">f/index.html</a><br><a href="f/h/index.html">f/h/index.html</a></td>
 </tr>
 </tbody>
 </table>
