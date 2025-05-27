@@ -15,31 +15,33 @@ Sample site showing that [benbalter/jekyll-readme-index](https://github.com/benb
 <tbody>
 <tr>
 <td>Working</td>
-<td>readme in subdir stays in subdir</td>
-<td nowrap><code>a/readme.md</code></td>
-<td nowrap><a href="/abackstrom/pages-build-bug/blob/main/a/index.html">a/index.html</a></td>
-<td nowrap><a href="/abackstrom/pages-build-bug/blob/main/a/index.html">a/index.html</a></td>
+<td>readme in directory stays there</td>
+<td nowrap>a/readme.md</td>
+<td nowrap><a href="a/index.html">a/index.html</a></td>
+<td nowrap><a href="a/index.html">a/index.html</a></td>
 </tr>
 <tr>
 <td>Broken</td>
-<td>readme in nested subdir <code>c</code>, with no parent readme, moves into grandparent <code>b</code></td>
-<td nowrap><code>b/c/readme.md</code></td>
-<td nowrap><a href="/abackstrom/pages-build-bug/blob/main/b/c/index.html">b/c/index.html</a></td>
-<td nowrap><a href="/abackstrom/pages-build-bug/blob/main/b/index.html">b/index.html</a></td>
+<td>readme in subdir moves into empty parent dir</td>
+<td nowrap>b/c/readme.md</td>
+<td nowrap><a href="b/c/index.html">b/c/index.html</a></td>
+<td nowrap><a href="b/index.html">b/index.html</a></td>
 </tr>
 <tr>
 <td>Working</td>
-<td></td>
-<td nowrap><code>d/readme.md</code><br><code>d/e/readme.md</code></td>
-<td nowrap><a href="/abackstrom/pages-build-bug/blob/main/d/index.html">d/index.html</a><br><a href="/abackstrom/pages-build-bug/blob/main/d/e/index.html">d/e/index.html</a></td>
-<td nowrap><a href="/abackstrom/pages-build-bug/blob/main/d/index.html">d/index.html</a><br><a href="/abackstrom/pages-build-bug/blob/main/d/e/index.html">d/e/index.html</a></td>
+<td>subdir readme will not clobber parent readme</td>
+<td nowrap>d/readme.md<br>d/e/readme.md</td>
+<td nowrap><a href="d/index.html">d/index.html</a><br><a href="d/e/index.html">d/e/index.html</a></td>
+<td nowrap><a href="d/index.html">d/index.html</a><br><a href="d/e/index.html">d/e/index.html</a></td>
 </tr>
 <tr>
 <td>Working</td>
-<td></td>
-<td nowrap><code>f/g/readme.md</code><br><code>f/h/readme.md</code></td>
-<td nowrap><a href="/abackstrom/pages-build-bug/blob/main/f/g/index.html">f/g/index.html</a><br><a href="/abackstrom/pages-build-bug/blob/main/f/h/index.html">f/h/index.html</a></td>
-<td nowrap><a href="/abackstrom/pages-build-bug/blob/main/f/g/index.html">f/g/index.html</a><br><a href="/abackstrom/pages-build-bug/blob/main/f/h/index.html">f/h/index.html</a></td>
+<td>two subdirs will not fight over parent dir</td>
+<td nowrap>f/g/readme.md<br>f/h/readme.md</td>
+<td nowrap><a href="f/g/index.html">f/g/index.html</a><br><a href="f/h/index.html">f/h/index.html</a></td>
+<td nowrap><a href="f/g/index.html">f/g/index.html</a><br><a href="f/h/index.html">f/h/index.html</a></td>
 </tr>
 </tbody>
 </table>
+
+
